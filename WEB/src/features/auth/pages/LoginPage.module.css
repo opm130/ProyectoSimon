@@ -1,0 +1,116 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 1.5rem;
+}
+
+.error span {
+  font-size: 20px;
+}
+
+.error p {
+  margin: 0;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.demo {
+  background: #f9fafb;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.demoTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.75rem 0;
+}
+
+.demoText {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0.25rem 0;
+  font-family: 'Courier New', monospace;
+}
+
+.demoText strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 2rem 1.5rem;
+  }
+
+  .icon {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .form,
+  .demo {
+    padding: 1.5rem;
+  }
+}

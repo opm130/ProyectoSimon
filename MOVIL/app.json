@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Simon Fleet Monitor",
+    "slug": "simon-fleet-new",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android", "web"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.simon.fleetmonitor"
+    },
+    "android": {
+      "package": "com.simon.fleetmonitor",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "simonfleet"
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summaryDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.summaryLabel {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+}
+
+.summaryValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}

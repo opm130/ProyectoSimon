@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 180px); /* Más espacio */
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Mapa */
+.mapContainer {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+  min-height: 600px; /* Mínimo más alto */
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Popup - Más compacto */
+.popup {
+  min-width: 220px;
+  font-size: 13px;
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.popupStatus {
+  font-size: 16px;
+}
+
+.popupTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.popupId {
+  font-size: 11px;
+  color: #6b7280;
+  font-family: 'Courier New', monospace;
+  margin: 0 0 8px 0;
+}
+
+.popupStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+}
+
+.popupStat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.popupAddress {
+  font-size: 11px;
+  color: #374151;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.popupTime {
+  font-size: 10px;
+  color: #9ca3af;
+  margin: 0;
+  text-align: right;
+}
+
+/* Leyenda - Más compacta */
+.legend {
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.legendTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+}
+
+.legendItems {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+
+  .mapContainer {
+    min-height: 400px;
+  }
+
+  .legendItems {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .popupStats {
+    grid-template-columns: 1fr;
+  }
+}
